@@ -7,8 +7,7 @@ $(document).ready(function(){
 		else{
 			$('.navbar').removeClass("sticky");
 
-		}
-                
+		}  
                 if(this.scrollY > 500){
                 $('.scroll-up-btn').addClass("show");
                 
@@ -16,50 +15,29 @@ $(document).ready(function(){
                 else {
                  
                  $('.scroll-up-btn').removeClass("show");
-                }
-                
-	});
-        
-        
+                }       
+	});        
         //slide-up script
-        
         $('.scroll-up-btn').click(function() {
                 $('html').animate({scrollTop: 0});
-        });
-        
-        //toggle menu-btn/navbar script
-        
-
+        });  
+        //toggle menu-btn/navbar script  
 	$('.menu-btn').click(function(){
 		$('.navbar .menu').toggleClass("active")
-	});
-
-        
-        //typing animation script
-        
+	});   
+        //typing animation script 
         var typed = new Typed(".typing",{
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Photographer", "Videographer"],
-        typeSpeed : 100,
-        backSpeed : 60,
-        loop : true
-        
-        });
-        
+       	strings: ["YouTuber", "Developer", "Blogger", "Designer", "Photographer", "Videographer"],
+       	typeSpeed : 100,
+       	backSpeed : 60,
+       	loop : true 
+       	}); 
         var typed = new Typed(".typing-2",{
         strings: ["YouTuber", "Developer", "Blogger", "Designer", "Photographer", "Videographer"],
         typeSpeed : 100,
         backSpeed : 60,
-        loop : true
-        
+        loop : true  
         });
-
-
-
-
-
 	// $('.carousel').owlcarousel({
-
-
-	// });
-		
+	// });		
 });
