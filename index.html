@@ -11,18 +11,13 @@
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> -->
 </head>
 <body>
-        <div class="scroll-up-btn"> 
-                <i class="fa fa-angle-up"></i>
-                
-                
-                </div>
-
-	
-
+	<div class="scroll-up-btn">
+		<i class="fa fa-angle-up"></i> 
+     	</div>
 	<nav class="navbar">
 		<div class="max-width">
 			<div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-			<ul class="menu">
+				<ul class="menu">
 				<li><a href="#home" class="menu-btn">Home</a></li>
 				<li><a href="#about" class="menu-btn">About</a></li>
 				<li><a href="#services" class="menu-btn">Services</a></li>
@@ -30,17 +25,9 @@
 				<li><a href="#teams" class="menu-btn">Teams</a></li>
 				<li><a href="#contact" class="menu-btn">Contact</a></li>
 			</ul>
-
-			<buttton class="menu-btn"><i class="fa fa-bars"></i> </button>
-
-			
-	
+			<buttton class="menu-btn"><i class="fa fa-bars"></i></button>	
 		</div>
 	</nav>
-
-	
-
-
 	<!--homme section start-->
 	<section class="home" id="home">
 		<div class="max-width">
@@ -49,13 +36,9 @@
 				<div class="text-2">Avaneesh A</div>
 				<div class="text-3">And I'm a <span class="typing"></span></div>
 				<a href="#">Hire me</a>
-			</div>
-			
+			</div>	
 		</div>
-
-
 	</section>
-
 	<!--about section start-->
 	<section class="about" id="about">
 		<div class="max-width">
@@ -65,11 +48,20 @@
 					<img src="https://qph.fs.quoracdn.net/main-thumb-320418092-200-oqtsoexhjnidahmgbolpovlihgvubutl.jpeg" alt="">
 				</div>
 				<div class="column right">
-					<div class="text">I'm Avaneesh A and I'm a <span class="typing-2"></span></div>
-					<p>I am an Engineer and also a self taught photographer. I've covered events in AJ Institute of Engineering and Technology for 4 years. I worked with security documentation team of NEET exam conducted in AJIET in the year 2018. I also worked with Publication committe that is responsible for publishing news of AJIET for 2 years. I take portraits for Corporate, Commercial, Social media, Content creation essentials, Headshots and portraits for social media. I have taken lot of portraits in and around Manglore from past 3 years. I've helped my clients to grow their business in social media and other requirements Whatsapp me on mentioned number for any enquiries.</p>
+					<div class="text">I'm Avaneesh A and I'm a <span class="typing-2"></span>
+					</div>
+					<p>I am an Engineer and also a self taught photographer. 
+						I've covered events in AJ Institute of Engineering and Technology for 4 years.
+						I worked with security documentation team of NEET exam conducted in AJIET in the year 2018.
+						I also worked with Publication committe that is responsible for publishing news of AJIET for 2 years. 
+						I take portraits for Corporate, Commercial, Social media, Content creation essentials, Headshots and 
+						portraits for social media.
+						I have taken lot of portraits in and around Manglore from past 3 years. 
+						I've helped my clients to grow their business in social media and other requirements Whatsapp me on 
+						mentioned number for any enquiries.</p>
 					<a href="#">Download CV</a>
+				</div>
 			</div>
-		</div>
 	</section>
 
 	<!-- services section start -->
@@ -161,7 +153,6 @@
 			</div>
 		</div>
 	</section>
-
 	<!--team section start-->
 	<section class="teams" id="teams">
 		<div class="max-width">
@@ -193,10 +184,8 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
-
 	<!-- contact section start -->
 	<section class="contact" id="contact">
 		<div class="max-width">
@@ -242,8 +231,7 @@
 			 			</div>
 			 			<div class="field email">
 			 				<input type="email" placeholder="Email" required>
-			 			</div>
-			 			
+			 			</div>			 			
 			 		</div>
 			 		<div class="field">
 			 				<input type="text" placeholder="subject" required>
@@ -255,82 +243,64 @@
 			 				<button type="submit">Send message</button>
 			 			</div>
 			 	</form>
-			 </div>
+				</div>
 			</div>
 		</div>
 	</section>
-
 	<!-- footer section start -->
 	<footer>
 		<span>Created By <a href="#"> CodingNepal </a> | <span class="fa fa-copyright"></span> 2020 All rights reserved</span>
 	</footer>
 
+	<script src="script.js">
+		$(document).ready(function(){
+		$(window).scroll(function(){
+			if(this.scrollY > 20){
+				$('.navbar').addClass("sticky");
+	
+			} 
+			else{
+				$('.navbar').removeClass("sticky");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+			}
 	
 
-<script src="script.js">
-	
-	$(document).ready(function(){
-	$(window).scroll(function(){
-		if(this.scrollY > 20){
-			$('.navbar').addClass("sticky");
+		});
 
-		} 
-		else{
-			$('.navbar').removeClass("sticky");
+		//toggle menu/navbar script
 
-		}
-
-
-	});
-
-	//toggle menu/navbar script
-
-	$('.menu-btn').click(function(){
-		$('.navbar .menu').toggleClass("active");
-		$('.menu-btn i').toggleClass("active");
-	});
-		
-	// owl carousel script
-	// $('.carousel').owlCarousel({
-	// 	margin: 20,
-	// 	loop:true,
-	// 	autoplayTime: 2000,
-	// 	autoplayHoverPause: true,
-	// 	responsive{
-	// 		0:{
-	// 			items: 1,
-	// 			nav: false
-	// 		},
-	// 		600:{
-	// 			items: 2,
-	// 			nav: false
-	// 		},
-	// 		1000:{
-	// 			items: 3,
-	// 			nav: false
-	// 		}
-	// 	}
+		$('.menu-btn').click(function(){
+			$('.navbar .menu').toggleClass("active");
+			$('.menu-btn i').toggleClass("active");
+		});
+			
+		// owl carousel script
+		// $('.carousel').owlCarousel({
+		// 	margin: 20,
+		// 	loop:true,
+		// 	autoplayTime: 2000,
+		// 	autoplayHoverPause: true,
+		// 	responsive{
+		// 		0:{
+		// 			items: 1,
+		// 			nav: false
+		// 		},
+		// 		600:{
+		// 			items: 2,
+		// 			nav: false
+		// 		},
+		// 		1000:{
+		// 			items: 3,
+		// 			nav: false
+		// 		}
+		// 	}
 
 
-	// });
+		// });
 
-});
+		});
 
-</script>
+	</script>
 
 
 </body>
